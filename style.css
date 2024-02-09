@@ -3,7 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fae1dd;
+      /* Gradient Background */
+      background: linear-gradient(135deg, #FFD700, #000000);
+      /* Box Shadow */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
   
   .container {
@@ -19,11 +22,11 @@ body {
     position: relative;
     width: 300px;
     height:200px;
-    background-color: #f08080; 
+    background-color: #d1e83d; 
   }
   
   .envelope:before {
-    background-color: #f08080; 
+    background-color: #e5ed57; 
     content:"";
     position: absolute;
     width: 212px;
@@ -47,8 +50,8 @@ body {
   .card:before {
     content:"";
     position: absolute;
-    border:3px solid #003049;
-    border-style: dotted;
+    border:3px solid #151611;
+    border-style: solid;
     width: 240px;
     heighT: 140px;
     left:12px;
@@ -57,17 +60,17 @@ body {
   
   .text {
     position: absolute;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 28px;
+    font-family: 'Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
     text-align: center;
     line-height:25px;
     top:19px;
     left:85px;
-    color: #003049;
+    color: #070808;
   }
   
   .heart {
-    background-color: #d62828;
+    background-color: #14150f;
     display: inline-block;
     height: 30px;
     margin: 0 10px;
@@ -81,7 +84,7 @@ body {
   .heart:before,
   .heart:after {
     content: "";
-    background-color: #d62828;
+    background-color: #0f0f0c;
     border-radius: 50%;
     height: 30px;
     position: absolute;
@@ -99,7 +102,7 @@ body {
   }
   .front {
     position: absolute;
-    border-right: 180px solid #f4978e;
+    border-right: 180px solid #cad93f;
     border-top: 95px solid transparent;
     border-bottom: 100px solid transparent;
     left:120px;
@@ -112,7 +115,7 @@ body {
   .front:before {
     position: absolute;
     content:"";
-    border-left: 300px solid #f8ad9d;
+    border-left: 300px solid #e1f14c;
     border-top: 195px solid transparent;
     left:-120px;
     top:-95px;
@@ -124,7 +127,7 @@ body {
     width: 330px;
     height: 25px;
     border-radius:50%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(235, 228, 100, 0.3);
     top:265px;
     left:-15px;
     animation: scale 3s linear infinite;
@@ -151,7 +154,7 @@ body {
   }
   
   .one, .two, .three, .four, .five {
-    background-color: red;
+    background-color: rgb(8, 8, 8);
     display: inline-block;
     height: 10px;
     margin: 0 10px;
@@ -164,7 +167,7 @@ body {
   .one:before,
   .one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, .five:before, .five:after {
     content: "";
-    background-color: red;
+    background-color: rgb(11, 11, 9);
     border-radius: 50%;
     height: 10px;
     position: absolute;
@@ -183,27 +186,27 @@ body {
     
   .one {
     left:10px;
-    animation: heart 1s ease-out infinite; 
+    animation: heart 2s ease-out infinite; 
   }
   
   .two {
     left:30px;
-    animation: heart 2s ease-out infinite; 
+    animation: heart 4s ease-out infinite; 
   }
   
   .three {
     left:50px;
-    animation: heart 1.5s ease-out infinite;
+    animation: heart 5s ease-out infinite;
   }
   
   .four {
     left:70px;
-    animation: heart 2.3s ease-out infinite;
+    animation: heart 4.5s ease-out infinite;
   }
   
   .five {
     left:90px;
-    animation: heart 1.7s ease-out infinite;
+    animation: heart 3.5s ease-out infinite;
   }
   
   @keyframes heart {

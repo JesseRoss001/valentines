@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
-    <script src="jquery-3.4.1.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">  
         <div class="valentines">
           <div class="envelope"></div>
           <div class="front"></div>
-          <div class="card">
+          <div class="card top">
           <div class="text">Happy</br> Valentine's</br> Day!</div>
           <div class="heart"</div>
           </div>
@@ -26,19 +26,20 @@
         </div>
         </div>
         <div class="shadow"></div>
-        </div>  
+        </div>
+        <script>
+            $(document).ready(function () {
+            $('.container').mouseenter(function () {
+                $('.card').stop().animate({
+                    top: '-90px'
+                }, 'slow');
+            }).mouseleave(function () {
+                $('.card').stop().animate({
+                    top: 0
+                }, 'slow');
+            });
+        });
+        </script>  
 </body>
-<script>
-    $(document).ready(function () {
-    $('.container').mouseenter(function () {
-        $('.card').stop().animate({
-            top: '-90px'
-        }, 'slow');
-    }).mouseleave(function () {
-        $('.card').stop().animate({
-            top: 0
-        }, 'slow');
-    });
-});
-</script>
+
 </html>
